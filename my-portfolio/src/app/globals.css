@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+next-route-announcer,
+nextjs-portal {
+  display: none;
+}
+
+body {
+  background-color: #161616;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
