@@ -4,8 +4,8 @@ import "./globals.css";
 import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Welcome to my personal portfolio website.",
+  title: "LeoSantos",
+  description: "Portfólio de Leonardo Santos",
 };
 
 export const viewport = {

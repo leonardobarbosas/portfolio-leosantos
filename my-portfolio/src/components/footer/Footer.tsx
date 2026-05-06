@@ -1,17 +1,36 @@
 export default function Footer() {
   return (
-    <footer className="w-11/12 mt-10 p-0.5 rounded-2xl bg-linear-to-r from-[#e63e212f] to-[#262626] text-[#666666]">
-      <div className="w-full h-20 flex justify-around items-center bg-[#1B1B1B] rounded-[calc(1rem-2px)]">
-        <div className="flex gap-2">
-          <p>t</p>
-          <p>t</p>
-          <p>t</p>
-        </div>
-        <p className="">© 2026 | Leonardo Santos</p>
-        <button className="bg-[#161616] border-2 border-[#262626] rounded-2xl w-36">
-          Baixar CV
-        </button>
-      </div>
+    <footer className="footer border-t-2 w-full h-20 items-center border-[#333333] flex justify-between px-10">
+      <ul className="flex gap-10">
+        <li>
+          <a
+            href="https://github.com/leonardobarbosas"
+            target="_blank"
+            className="text-[#FFFFFF50]"
+          >
+            Github
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/leobarbosas/"
+            target="_blank"
+            className="text-[#FFFFFF50]"
+          >
+            Linkedin
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQHFxgGLkrHMvWPTCDDNcKFSxzwXCMVhBThRwMXQFrbxXcTwFmtBgQbBljBsXvCHxJQB"
+            target="_blank"
+            className="text-[#FFFFFF50]"
+          >
+            leonardobarbosantos@gmail.com
+          </a>
+        </li>
+      </ul>
+      <p className="text-[#FFFFFF80]">© 2026 Leonardo Barbosa Santos.</p>
     </footer>
   );
 }

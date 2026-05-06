@@ -6,9 +6,13 @@ nextjs-portal {
 }
 
 body {
-  background-color: #161616;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #222222;
+}
+
+.menu-font {
+  color: #ffffff50;
+}
+
+.menu-font:hover {
+  color: #ffffff;
 }
