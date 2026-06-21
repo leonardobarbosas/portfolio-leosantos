@@ -12,12 +12,12 @@ export default function Home() {
   };
 
   return (
-    <div className="home-div flex justify-center gap-10">
+    <div className="h-full flex justify-center items-center gap-10">
       <Image
         src="/img/main-image.png"
         alt="Image-Main"
-        height={500}
-        width={500}
+        height={600}
+        width={600}
       />
       <div className="w-1/3 flex flex-col gap-7 justify-center">
         <h2 className="text-[#FFFFFF50] text-2xl">Desenvolvedor Fullstack</h2>
@@ -35,13 +35,13 @@ export default function Home() {
         </div>
         <div className="flex gap-5">
           <Link href="/projetos">
-            <button className="border-[#007CED] border-2 bg-[#333333] w-35 h-13 rounded-4xl cursor-pointer">
+            <button className="border-[#007CED] border-2 bg-[#333333] w-35 h-13 rounded-4xl">
               Projetos
             </button>
           </Link>
           <button
             onClick={handleDownload}
-            className="border-[#D5D5D5] border-2 bg-[#333333] w-35 h-13 rounded-4xl cursor-pointer"
+            className="border-[#D5D5D5] border-2 bg-[#333333] w-35 h-13 rounded-4xl"
           >
             Baixar CV
           </button>

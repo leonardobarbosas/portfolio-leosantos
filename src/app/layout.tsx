@@ -38,7 +38,7 @@ export default function RootLayout({
           }}
         />
         <Header />
-        {children}
+        <main className="flex-1 overflow-y-auto">{children}</main>
         <Footer />
       </body>
     </html>
