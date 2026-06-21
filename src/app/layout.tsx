@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Header from "../components/header/Header";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
+import AnimatedCursor from "react-animated-cursor";
 
 export const metadata: Metadata = {
   title: "LeoSantos",
@@ -23,6 +24,19 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className="h-screen flex flex-col justify-between">
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          outerStyle={{
+            border: "3px solid #fff",
+          }}
+          innerStyle={{
+            backgroundColor: "#fff",
+          }}
+        />
         <Header />
         {children}
         <Footer />
