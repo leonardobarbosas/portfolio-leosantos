@@ -15,4 +15,5 @@ body {
 
 .menu-font:hover {
   color: #ffffff;
+  transition: color 0.3s ease-in-out;
 }

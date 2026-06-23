@@ -18,6 +18,7 @@ export default function Home() {
         alt="Image-Main"
         height={600}
         width={600}
+        className="transition-transform duration-1000 hover:rotate-50"
       />
       <div className="w-1/3 flex flex-col gap-7 justify-center">
         <h2 className="text-[#FFFFFF50] text-2xl">Desenvolvedor Fullstack</h2>
@@ -35,13 +36,13 @@ export default function Home() {
         </div>
         <div className="flex gap-5">
           <Link href="/projetos">
-            <button className="border-[#007CED] border-2 bg-[#333333] w-35 h-13 rounded-4xl">
+            <button className="border-[#007CED] border-2 bg-[#333333] w-35 h-13 rounded-4xl hover:bg-[#007CED] transition-all duration-300">
               Projetos
             </button>
           </Link>
           <button
             onClick={handleDownload}
-            className="border-[#D5D5D5] border-2 bg-[#333333] w-35 h-13 rounded-4xl"
+            className="border-[#D5D5D5] border-2 bg-[#333333] w-35 h-13 rounded-4xl hover:bg-[#D5D5D5] hover:text-black transition-all duration-300"
           >
             Baixar CV
           </button>
