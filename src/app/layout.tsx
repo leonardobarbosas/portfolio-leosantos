@@ -25,13 +25,13 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className="h-screen flex flex-col justify-between">
         <AnimatedCursor
-          innerSize={8}
-          outerSize={35}
+          innerSize={5}
+          outerSize={30}
           innerScale={1}
           outerScale={2}
           outerAlpha={0}
           outerStyle={{
-            border: "3px solid #fff",
+            border: "2px solid #fff",
           }}
           innerStyle={{
             backgroundColor: "#fff",
