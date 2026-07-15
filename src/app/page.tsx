@@ -12,15 +12,15 @@ export default function Home() {
   };
 
   return (
-    <div className="h-full flex justify-center items-center gap-10">
+    <div className="home-page h-full flex justify-center items-center gap-10">
       <Image
         src="/img/main-image.png"
         alt="Image-Main"
         height={600}
         width={600}
-        className="transition-transform duration-1000 hover:rotate-50"
+        className="image-home transition-transform duration-1000 hover:rotate-50"
       />
-      <div className="w-1/3 flex flex-col gap-7 justify-center">
+      <div className="home-page-container w-1/3 flex flex-col gap-7 justify-center">
         <h2 className="text-[#FFFFFF50] text-2xl">Desenvolvedor Fullstack</h2>
         <h1 className="text-6xl font-bold group">
           Leonardo{" "}
@@ -39,7 +39,7 @@ export default function Home() {
             orientadas a resultados.
           </p>
         </div>
-        <div className="flex gap-5">
+        <div className="home-buttons flex gap-5">
           <Link href="/projetos">
             <button className="border-[#007CED] border-2 bg-[#333333] w-35 h-13 rounded-4xl hover:bg-[#007CED] transition-all duration-300">
               Projetos
