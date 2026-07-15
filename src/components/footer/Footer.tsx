@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="footer border-t-2 w-full h-20 items-center border-[#333333] hover:border-[#6b6b6b] duration-500 transition-all flex justify-between px-10">
-      <ul className="flex gap-10">
+    <footer className="footer border-t-2 w-full h-20 items-center border-[#333333] hover:border-[#6b6b6b] duration-500 transition-all flex justify-between px-10 [@media(max-width:750px)]:flex-col [@media(max-width:750px)]:gap-2">
+      <ul className="flex gap-10 [@media(max-width:750px)]:flex-col [@media(max-width:750px)]:text-center [@media(max-width:750px)]:gap-2">
         <li>
           <Link
             href="https://github.com/leonardobarbosas"
