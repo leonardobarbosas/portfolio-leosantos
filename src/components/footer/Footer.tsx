@@ -1,33 +1,35 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer className="footer border-t-2 w-full h-20 items-center border-[#333333] flex justify-between px-10">
+    <footer className="footer border-t-2 w-full h-20 items-center border-[#333333] hover:border-[#6b6b6b] duration-500 transition-all flex justify-between px-10">
       <ul className="flex gap-10">
         <li>
-          <a
+          <Link
             href="https://github.com/leonardobarbosas"
             target="_blank"
-            className="text-[#FFFFFF50]"
+            className="text-[#FFFFFF50] hover:text-white transition-all duration-300"
           >
             Github
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="https://www.linkedin.com/in/leobarbosas/"
             target="_blank"
-            className="text-[#FFFFFF50]"
+            className="text-[#FFFFFF50] hover:text-white transition-all duration-300"
           >
             Linkedin
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQHFxgGLkrHMvWPTCDDNcKFSxzwXCMVhBThRwMXQFrbxXcTwFmtBgQbBljBsXvCHxJQB"
             target="_blank"
-            className="text-[#FFFFFF50]"
+            className="text-[#FFFFFF50] hover:text-white transition-all duration-300"
           >
             leonardobarbosantos@gmail.com
-          </a>
+          </Link>
         </li>
       </ul>
       <p className="text-[#FFFFFF80]">© 2026 Leonardo Barbosa Santos.</p>

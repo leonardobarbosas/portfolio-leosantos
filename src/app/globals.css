@@ -8,12 +8,3 @@ nextjs-portal {
 body {
   background-color: #222222;
 }
-
-.menu-font {
-  color: #ffffff50;
-}
-
-.menu-font:hover {
-  color: #ffffff;
-  transition: color 0.3s ease-in-out;
-}

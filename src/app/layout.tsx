@@ -24,22 +24,22 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className="h-screen flex flex-col justify-between">
-        <AnimatedCursor
-          innerSize={5}
-          outerSize={30}
-          innerScale={1}
-          outerScale={2}
-          outerAlpha={0}
-          outerStyle={{
-            border: "2px solid #fff",
-          }}
-          innerStyle={{
-            backgroundColor: "#fff",
-          }}
-        />
-        <Header />
-        <main className="flex-1 overflow-y-auto">{children}</main>
-        <Footer />
+          <AnimatedCursor
+            innerSize={5}
+            outerSize={30}
+            innerScale={1}
+            outerScale={2}
+            outerAlpha={0}
+            outerStyle={{
+              border: "2px solid #fff",
+            }}
+            innerStyle={{
+              backgroundColor: "#fff",
+            }}
+          />
+          <Header />
+          <main className="flex-1 overflow-y-auto">{children}</main>
+          <Footer />
       </body>
     </html>
   );

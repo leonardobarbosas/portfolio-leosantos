@@ -22,7 +22,12 @@ export default function Home() {
       />
       <div className="w-1/3 flex flex-col gap-7 justify-center">
         <h2 className="text-[#FFFFFF50] text-2xl">Desenvolvedor Fullstack</h2>
-        <h1 className="text-6xl font-bold">Leonardo Santos</h1>
+        <h1 className="text-6xl font-bold group">
+          Leonardo{" "}
+          <span className="hover:text-[#007CED] transition-all duration-300">
+            Santos
+          </span>{" "}
+        </h1>
         <div>
           <p>
             Desenvolvedor Fullstack focado na criação de aplicações completas,
