@@ -15,7 +15,7 @@ export default function Contact() {
         Contato
       </h1>
 
-      <div className="flex flex-col h-full items-center justify-around">
+      <div className="contact-center flex flex-col h-full items-center justify-around">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58537.67616646857!2d-46.92372134957773!3d-23.510741531467957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf03dd6a1db995%3A0x70548836d6e4a9a2!2sBarueri%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1782193564917!5m2!1spt-BR!2sbr"
           width="90%"
@@ -27,7 +27,7 @@ export default function Contact() {
           className="rounded-lg shadow-2xs"
         ></iframe>
 
-        <div className="flex flex-row w-9/10 gap-30">
+        <div className="contact-container flex flex-row w-9/10 gap-30">
           <div className="informations w-1/3 flex flex-col gap-6">
             <div className="flex w-full gap-4 items-center">
               <Phone className="w-15 h-15 text-[#007CED]" />
@@ -65,7 +65,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="w-2/3 flex items-center justify-center">
+          <div className="input-container w-2/3 flex items-center justify-center">
             <div className="w-full">
               <h1 className="text-white font-bold text-2xl mb-6">
                 Fale comigo!
