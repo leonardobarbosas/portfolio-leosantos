@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm install --legacy-peer-deps && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
+  },
+  "npmrc": {
+    "legacy-peer-deps": true
   },
   "dependencies": {
     "lucide-react": "^1.21.0",
