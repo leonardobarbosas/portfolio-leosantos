@@ -98,7 +98,7 @@ export default function Projeto() {
 
   return (
     <div className="flex flex-col h-full pt-5">
-      <h1 className="pl-10 text-6xl font-bold bg-[#252525] border-t-2 border-b-2 pt-5 pb-5 border-[#333333]">
+      <h1 className="pl-10 text-6xl font-bold bg-[#252525] border-t-2 border-b-2 pt-5 pb-5 border-[#333333] [@media(max-width:550px)]:text-4xl">
         {projeto.titulo}
       </h1>
 
@@ -113,15 +113,19 @@ export default function Projeto() {
         >
           <div className="bg-[#333333] flex flex-col w-full h-40 hover:h-60 transition-all duration-300 rounded-t-lg items-center justify-between group">
             <div className="w-full h-full flex items-center justify-between">
-              <div className="flex flex-col pl-10 gap-5">
-                <h2 className="text-4xl font-bold">{projeto.titulo}</h2>
-                <p className="text-[#a0a0a0]">{projeto.descricao}</p>
+              <div className="flex flex-col pl-10 gap-5 [@media(max-width:550px)]:pl-2">
+                <h2 className="text-4xl font-bold [@media(max-width:550px)]:text-2xl">
+                  {projeto.titulo}
+                </h2>
+                <p className="text-[#a0a0a0] [@media(max-width:550px)]:hidden">
+                  {projeto.descricao}
+                </p>
               </div>
               <Link
                 href={`${projeto.link}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="pr-10"
+                className="pr-10 [@media(max-width:550px)]:pr-2"
               >
                 <button className="bg-[#525252] w-35 h-13 rounded-2xl hover:bg-[#686868] transition-all duration-300">
                   Repositório
@@ -129,7 +133,7 @@ export default function Projeto() {
               </Link>
             </div>
 
-            <div className="w-full h-0 group-hover:h-30 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-between px-10 pb-5">
+            <div className="w-full h-0 group-hover:h-30 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-between px-10 pb-5 [@media(max-width:850px)]:hidden">
               <div className="flex flex-col gap-3">
                 <p className="text-[#a0a0a0]">{projeto.desc_long}</p>
               </div>

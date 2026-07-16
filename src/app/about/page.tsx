@@ -14,10 +14,10 @@ export default function About() {
         Sobre Mim
       </h1>
 
-      <div className="h-full flex w-full">
-        <div className="h-full flex w-1/2">
-          <div className="flex flex-col  gap-10 pl-20 justify-center">
-            <div className="flex flex-col gap-5">
+      <div className="about-container h-full flex w-full justify-around">
+        <div className="about-box-1 h-full flex w-1/3">
+          <div className="about-box-container flex flex-col  gap-10 pl-20 justify-center">
+            <div className="flex flex-col gap-5 w-full">
               <p className="text-[#cecece]">Quem eu sou</p>
               <p className="text-[#cecece]">
                 Sou{" "}
@@ -58,11 +58,9 @@ export default function About() {
               Baixar CV
             </button>
           </div>
-
-          <div className="flex flex-col justify-center w-1/2 pr-20"></div>
         </div>
 
-        <div className="w-1/2  flex flex-col justify-center gap-10">
+        <div className="stacks-container w-1/2  flex flex-col justify-center gap-10">
           <h2 className="text-[#cecece] text-2xl font-semibold">
             Stack de tecnologias
           </h2>
